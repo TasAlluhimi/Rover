@@ -1,0 +1,17 @@
+*{
+    overflow-x: hidden;
+}
+
+.nav-div{
+    width: 60vw;
+
+}
+
+.main-title{
+    width: 30vw;
+
+}
+
+.grey{
+    color:rgb(101, 113, 123)
+}
