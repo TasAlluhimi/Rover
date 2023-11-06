@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Rover.com: Book Dog Boarding Services</title>
+  <title class="replace-text">Rover.com: Book Dog Boarding Services</title>
   <meta name="description" content="Rover sample site">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,21 +73,21 @@ rel="stylesheet"
 
   <header>
   
-    <!-- https://images.unsplash.com/photo-1440768095977-755591d57606?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvbWFuJTIwaG9sZGluZyUyMGElMjBjYXR8ZW58MHx8MHx8fDA%3D -->
     <!-- Background image -->
-    <div
+    <div id="main-img-container"
       class="p-5 text-center bg-image"
       style="
-        background-image: url('https://images.unsplash.com/photo-1440768095977-755591d57606?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvbWFuJTIwaG9sZGluZyUyMGElMjBjYXR8ZW58MHx8MHx8fDA%3D');
+        background-image: url('https://images.pexels.com/photos/3842416/pexels-photo-3842416.jpeg?auto=compress&cs=tinysrgb&w=1600');
         background-size: cover;
-        height: 400px;
+        background-position: 50% 30%;
+        height: 600px;
       "
     >
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.496);">
         <div class="d-flex justify-content-start align-items-center h-100">
-          <div class="text-white text-start main-title p-4">
-            <h1 class="mb-3 grey">We're the Dog People</h1>
-            <p class="mb-3 grey">Book trusted, local pet sitters and walkers who will care for your dog like you would.</p>
+          <div class="text-white text-start main-title p-4 mobile-adj">
+            <h1 class="mb-3 text-white replace-text">We're the Dog People</h1>
+            <p class="mb-3 text-white replace-text">Book trusted, local pet sitters and walkers who will care for your dog like you would.</p>
           </div>
         </div>
       </div>
@@ -96,95 +96,128 @@ rel="stylesheet"
   </header>
 
 
-  <main class="container d-flex flex-column text-center mt-5">
+  <main class="container d-flex flex-column text-center mt-5 w-100">
+    
+    <h2>Services for every dog and cat</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-5 mt-1 d-flex justify-content-center mb-5">
+      <div class="col img-services">
+        <div class="card ">
+          <img class="" id="dog" src="https://i.ibb.co/hD6fJq2/mobile-hero-1.jpg" alt="mobile hero">
+        </div>
+      </div>
+      <div class="col img-services">
+        <div class="card">
+          <img class="" id="cat" src="https://i.ibb.co/QfqjHxq/mobile-hero-2.jpg"alt="mobile hero">
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <!--Rover Facts Container-->
-    <section class="rover-middle-section">
-      <h2>Services for every dog and cat</h2>
-      <div class="rover-mobile-hero-container">
-        <img class="rover-mobile-hero" src="https://i.ibb.co/hD6fJq2/mobile-hero-1.jpg" alt="mobile hero">
-      <img class="rover-mobile-hero" src="https://i.ibb.co/QfqjHxq/mobile-hero-2.jpg"alt="mobile hero">
+
+    <div class="d-flex mobile-tablet-services">
+
+      <div class="d-flex w-100 p-4">
+        <section class="">
+          <div class="d-flex serv-icons">
+            <img width="80vw" src="https://i.ibb.co/jJGCg6c/suitcase.png" alt="Suitcase image">
+            <div class="services">
+              <h3 class="replace-text">Dog Boarding</h3>
+            <p>Perfect if you need overnight pet care.</p>
+            </div>
+            
+          </div>
+          <div class="d-flex serv-icons">
+            <img width="80vw" src="https://i.ibb.co/S6KpBBZ/house.png" alt="House image">
+            <div class="services">
+            <h3>House Sitting</h3>
+            <p>Great if you need overnight pet or house-sitting services.</p>
+            </div>
+          </div>
+
+          <div class="d-flex serv-icons">
+            <img width="80vw" src="https://i.ibb.co/HpMNXjZ/paws.png" alt="Paws image">
+            <div class="services">
+            <h3 class="replace-text">Dog walking</h3>
+            <p class="replace-text">Whenever your dog needs a walk.</p>
+            </div>
+          </div>
+
+          <div class="d-flex serv-icons">
+            <img width="80vw" src="https://i.ibb.co/NyQN7dy/sun.png" alt="Sun image">
+            <div class="services">
+            <h3>Doggy Day Care</h3>
+            <p class="replace-text">Daytime pet care in your sitter’s dog-friendly home.</p>
+            </div>
+          </div>
+
+          <div class="d-flex serv-icons">
+            <img width="80vw" src="https://i.ibb.co/CtLTLmX/food.png" alt="Food image">
+            <div class="services">
+            <h3>Drop-In Visits</h3>
+            <p>For check-ins and play dates.</p>
+          </div>
+        </section>
       </div>
 
-    <div class="factandboxContainer"><!--i add this div for big screens-->
-      <section class="rover-facts-container">
-        <div class="rover-fact-indiv rover-fact-indiv-1">
-          <img src="https://i.ibb.co/jJGCg6c/suitcase.png" alt="Suitcase image">
-          <h3>Dog Boarding</h3>
-          <p>Perfect if you need overnight pet care.</p>
-        </div>
-        <div class="rover-fact-indiv rover-fact-indiv-2">
-          <img src="https://i.ibb.co/S6KpBBZ/house.png" alt="House image">
-          <h3>House Sitting</h3>
-          <p>Great if you need overnight pet or house-sitting services.</p>
-        </div>
-        <div class="rover-fact-indiv rover-fact-indiv-3">
-          <img src="https://i.ibb.co/HpMNXjZ/paws.png" alt="Paws image">
-          <h3>Dog walking</h3>
-          <p>Whenever your dog needs a walk.</p>
-        </div>
-        <div class="rover-fact-indiv rover-fact-indiv-4">
-          <img src="https://i.ibb.co/NyQN7dy/sun.png" alt="Sun image">
-          <h3>Doggy Day Care</h3>
-          <p>Daytime pet care in your sitter’s dog-friendly home.</p>
-        </div>
-        <div class="rover-fact-indiv rover-fact-indiv-5">
-          <img src="https://i.ibb.co/CtLTLmX/food.png" alt="Food image">
-          <h3>Drop-In Visits</h3>
-          <p>For check-ins and play dates.</p>
-        </div>
-      </section>
+      <div class="d-flex flex-column w-100 p-4 tablet-adj">
 
-      <section class="rover-cta-box">
-        <header class="rover-cta-header">
-          <img src="https://i.ibb.co/4ZrkTkt/shield.png" alt="shield icon">
-          <p>Rover accepts less than <span class="bold">20%</span> of potential sitters</p>
-        </header>
-        <ul class="rover-facts">
-          <li><span class="checkmark">&#10003;</span>&nbsp;	All new sitters pass a basic background check</li>
-          <li><span class="checkmark">&#10003;</span>&nbsp;	All sitters provide a detailed profile and personal information</li>
-          <li><span class="checkmark">&#10003;</span>&nbsp;	All sitters are approved by our team of sitter specialists</li>
-        </ul>
-        <div class="rover-cta">Book your next Rover sitter</div>
-      </section>
+        <div class="card text-bg-light mb-3" style="max-width: 55rem;">
+          <div class="card-header text-center d-flex justify-content-center align-items-center">
+            <img width="30vw" src="https://i.ibb.co/4ZrkTkt/shield.png" alt="shield icon">
+            <p class="mx-3"> Rover accepts less than <span class="bold">20%</span> of potential sitters</p>
+          </div>
+          <div class="card-body" style="background-color: white;">
+            <ul class="rover-facts">
+              <li><span class="checkmark">&#10003;</span>&nbsp;	All new sitters pass a basic background check</li>
+              <li><span class="checkmark">&#10003;</span>&nbsp;	All sitters provide a detailed profile and personal information</li>
+              <li><span class="checkmark">&#10003;</span>&nbsp;	All sitters are approved by our team of sitter specialists</li>
+              <button type="button" class="btn btn-success mt-4 w-100">Book your next Rover sitter</button>
+            </ul>
+          </div>
+        </div>
+          <div class="text-center">All services booked on Rover are backed by the Rover Guarantee, 24/7 support, Photo Updates, and our <a href="">Reservation Protection</a>.</div>
+      </div>
+    </div>    
 
-      <p class="rover-protections">All services booked on Rover are backed by the Rover Guarantee, 24/7 Support, Photo Updates, and our <a href="#">Reservation Protection</a>.</p>
+          <div class="container">
+          <div class="card card-w">
+            <div class="card-body">
+              <h5 class="card-title" style="color: green;">———</h5>
+              <p class="card-text replace-text">
+                My Rover sitter sent me updates throughout the day and took care of my dog as if she were her own.
+            <span class="bold"><br>– Corinna F.</span>
+              </p>
+              <p class="card-text">
+                <small class="text-muted replace-text"> We’re The Dog People. <a href="#">Learn More</a></small>
+              </p>
+            </div>
+            <img id="second-img" src="https://images.pexels.com/photos/3767378/pexels-photo-3767378.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-bottom bot-img" alt="girl"/>
+          </div>
+        </div>
+
+          <div class="text-center d-flex flex-column justify-content-center align-items-center mt-5">
+            <h2 class="replace-text">We’re the treat-your-dog-like-family dog people</h2>
+
+    <section class="mt-5 d-flex justify-content-around w-100 bot-buttons">
+      
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="https://i.ibb.co/gV5G6x8/watchglass.png" alt="search">
+          <h3>Search</h3>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="https://i.ibb.co/B4Z1bzT/phone.png" alt="phone">
+          <h3>Book & pay on Rover</h3>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="https://i.ibb.co/4ZrkTkt/shield.png" alt="shield">
+          <h3>Relax</h3>
+        </div>
     </section>
   </div>
 
-    <!--Rover action-->
-    <section class="rover-action-shot"></section>
-    <aside class="rover-action-quote-container">
-      <div class="rover-action-dash">&mdash;&mdash;&mdash;</div>
-      <p class="rover-quote">My Rover sitter sent me updates throughout the day and took care of my dog as if she were her own. <span>– Corinna F.</span></p>
-      <p>We’re The Dog People. <a href="#">Learn More</a></p>
-
-    </aside>
-
-    <!--Rover 1-2-3-->
-    <section class="rover-123-container">
-      <h2>We’re the treat-your-dog-like-family dog people</h2>
-      <div class="rover-123-item-container">
-        <div class="rover-123-item">
-          <img src="https://i.ibb.co/gV5G6x8/watchglass.png" alt="search">
-          <h3>Search</h3>
-          <p>Read verified reviews and pick the perfect sitter.</p>
-        </div>
-        <div class="rover-123-item">
-          <img src="https://i.ibb.co/B4Z1bzT/phone.png" alt="phone">
-          <h3>Book & pay on Rover</h3>
-          <p>Book and pay securely through the website or app.</p>
-        </div>
-        <div class="rover-123-item">
-          <img src="https://i.ibb.co/4ZrkTkt/shield.png" alt="shield">
-          <h3>Relax</h3>
-          <p>Get the Rover Guarantee, 24/7 support, and reservation protection.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <script src="js/main.js"></script>
+  <p class="mt-2">Read verified reviews and pick the perfect sitter. Book and pay securely through the website or app. Get the Rover Guarantee, 24/7 support, and reservation protection.</p>
+  <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
